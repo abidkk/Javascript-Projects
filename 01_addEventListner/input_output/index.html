@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Output</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="py-4 px-2 md:px-10">
+
+        <header class="flex justify-between">
+            <h1 class="text-xl md:text-4xl font-bold font-serif">The Heading Page</h1>
+            <button onclick="printHandler()"><img src="../../public/printlog.png" alt="print" class="w-10 h-10"></button>
+        </header>
+
+
+        <!-- input -->
+        <section>
+            <input type="text" id="inp" placeholder="write something" class="p-2 border-b border-gray-300  w-full">
+        </section>
+
+        <!-- Output -->
+        <section class="text-wrap ">
+            <div class=" text-xl p-5 min-h-screen text-wrap break-words" id="outp">
+                
+            </div>
+        </section>
+
+    </main>
+<script>
+
+    let userInp = document.getElementById("inp")
+    let getOut = document.getElementById("outp")
+userInp.addEventListener("input", ()=> {
+    // console.log(userInp.value)
+    getOut.innerHTML = userInp.value;
+})
+
+
+let printHandler = () => {
+    window.print()
+}
+
+</script>
+</body>
+
+</html> 
