@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks-Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main class="grid grid-cols-3 gap-4">
+
+        <!-- input values -->
+        <div class="bg-gray-200 p-2 min-h-screen px-10 ">
+            <form action="#" name="result-form" onsubmit="onSubmit();return false">
+
+                <div class="p-4 bg-gray-300  rounded-t-md ">
+                    <input type="text" id="name" placeholder="your name" required
+                        class="px-4 py-2 rounded-md w-full my-1">
+                    <input type="text" id="roll" placeholder="roll no" required
+                        class="px-4 py-2 rounded-md w-full my-1 ">
+                </div>
+
+                <div class="grid grid-cols-1 gap- px-5 border-8 rounded-b-md border-gray-300 p-4">
+                    <div class=" p-2 grid grid-cols-1 gap-1">
+                        <label for="">English</label>
+                        <input type="number" id="eng" placeholder="out of 100" required class=" px-2 py-1 rounded-md ">
+                    </div>
+
+                    <div class=" p-2 grid grid-cols-1 gap-1">
+                        <label for="">Mathematics</label>
+                        <input type="number" id="math" placeholder=" out of 100" required
+                            class=" px-2 py-1 rounded-md ">
+                    </div>
+
+                    <div class=" p-2 grid grid-cols-1 gap-1">
+                        <label for="">Physics</label>
+                        <input type="number" id="phy" placeholder="out of 100" required class=" px-2 py-1 rounded-md">
+                    </div>
+
+                    <div class=" p-2 grid grid-cols-1 gap-1">
+                        <label for="">General Knowledge</label>
+                        <input type="number" id="gk" placeholder="out of 100" required class=" px-2 py-1 rounded-md">
+                    </div>
+
+                    <div class=" p-2 grid grid-cols-1 gap-1">
+                        <label for="">Computer Science</label>
+                        <input type="number" id="comp" placeholder="out of 100" required class="px-2 py-1 rounded-md ">
+                    </div>
+
+
+                    <!-- button -->
+                    <div class="flex flex-wrap items-center justify-between px-2 pt-4 ">
+                        <button
+                            class="px-4 py-1 bg-blue-600 text-white hover:bg-blue-800 duration-500 w-[80%]  rounded-md">submit</button>
+                        <button type="reset">
+                            <img src="./resetred.png" alt="reset"
+                                class="w-6 h-6 cursor-pointer  hover:scale-105 duration-500 ">
+                        </button>
+                    </div>
+
+
+            </form>
+
+
+        </div>
+        </div>
+
+
+        <!-- sheet -->
+        <div class="text-2xl col-span-2 md:mr-20 pt-2">
+            <div class="flex justify-between gap-2 items-center">
+                <h1 class="text-gray-300 py-2">Result Sheet</h1>
+                <div class="flex gap-2 opacity-100">
+                    <a href="https://github.com/abidkk/smit_ai_chatbot_b3/tree/main/projects/marks_sheet"> <img
+                            src="./github.jpeg" alt="github" class="w-8 h-8 hover:scale-105 duration-500"></a>
+                            <a href="https://www.linkedin.com/in/abidkk/"><img src="./linkedin2.png" alt="linkedin"
+                            class="w-8 h-8 hover:scale-105 duration-500"></a>
+                </div>
+
+            </div>
+
+            <!-- Students Name and Roll -->
+            <div class="flex gap-5 justify-between px-10 text-2xl border-b border-gray-200 py-2 mb-5 font-bold ">
+                <h2 id="student_name"></h2>
+                <h2 id="student_roll"></h2>
+            </div>
+
+            <!-- Subjects -->
+            <div class="  ">
+                <div id="colHead"></div>
+                <p id="engMarks"></p>
+                <p id="mathMarks"></p>
+                <p id="phyMarks"></p>
+                <p id="gkMarks"> </p>
+                <p id="csMarks"> </p>
+
+                <h3 id="obtained"></h3>
+            </div>
+
+
+            <!-- Remarks -->
+            <div id="remarks" class="text-gray-100 mt-4">
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <script src="./app.js">
+
+        
+    </script>
+</body>
+
+</html>
