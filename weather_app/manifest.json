@@ -1,0 +1,16 @@
+{
+  "background_color": "#9ac5c9",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "weather",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "weather",
+  "start_url": "/",
+  "theme_color": "#2b506a",
+  "id": "weather123",
+  "description": "See weather conditions and Forecast",
+  "categories": [
+    "weather"
+  ]
+}
