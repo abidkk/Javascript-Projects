@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" p-2 md:p-10 flex ">
+
+    <div class="bg-gray-800 p-2 mx-auto text-gray-100 w-[400px] rounded-md">
+
+        <h1 class="text-center text-2xl font-bold py-2 ">Counter App</h1>
+        <h1 class="text-center text-2xl text-cyan-400 pt-2">Abidkk</h1>
+        <!-- social links -->
+        <div class="flex gap-2  mx-auto flex justify-center text-gray-200  p-2">
+            <a href="https://www.linkedin.com/posts/abid-khokhar-a8a91327b_hello-everyone-i-am-excited-to-share-activity-7153293609398657024-ZKfj?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <div
+                    class="hover:scale-105 duration-500  p-1 bg-gray-500 rounded-md border border-gray-300 hover:shadow-lg cursor-pointer">
+                    <img src="./linkedin.svg" alt="divn kedin" class="">
+                </div>
+            </a>
+            <a href="https://github.com/abidkk/smit_ai_chatbot_b3" target="_blank">
+                <div
+                    class="hover:scale-105 duration-500 bg-gray-500 p-1 rounded-md border border-gray-300 hover:shadow-lg cursor-pointer">
+                    <img src="./github.svg" alt="github" class="">
+                </div>
+            </a>
+        </div>
+
+
+        <div class="bg-gray-800  pt-4 min-h-80 rounded-md">
+
+            <!-- counter  -->
+            <div class="bg-gray-900 p-5 text-center mt-2 text-8xl ">
+                <span id="counter">0</span>
+            </div>
+
+            <!-- buttons -->
+            <div class="p-4 flex justify-center gap-2 items-center mt-5">
+                <button class="bg-blue-600 px-2 py-1 rounded-md hover:bg-blue-800 duration-500"
+                    onclick="increase()">Increase</button>
+                <button class="bg-blue-600 px-2 py-1 rounded-md hover:bg-blue-800 duration-500"
+                    onclick="decrease()">Decrease</button>
+            </div>
+
+            <div class="flex justify-center">
+                <button class="text-red-600 text-xl px-2 py-1 rounded-md hover:bg-red-800 hover:text-white duration-500"
+                    onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+    </div>
+
+<script src="./app.js"></script>
+</body>
+
+</html>
