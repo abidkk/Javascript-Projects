@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+
+    <div
+        class="bg-black flex justify-center items-center p-2 w-72 md:w-96 h-[500px] mx-auto mt-2 text-center ">
+
+        <img id="bulb" onclick="changeImage()" src="./bulbon.png" width="1000" height="1800">
+
+    </div>
+    <div class="text-yellow-500 text-center m-2 text-2xl "><button id="butn" class="bg-gray-800 px-4 py-2 rounded-sm  "
+            onclick="changeImage()">turn off</button>
+    </div>
+
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('bulb');
+            if (image.src.match("bulbon")) {
+                image.src = "./bulboff.png";
+            } else {
+                image.src = "./bulbon.png";
+            }
+
+
+            var btn = document.getElementById("butn");
+            if (image.src.match("bulbon")) {
+                btn.innerHTML = "turn off"
+              
+            } else {
+                btn.innerHTML = "turn on"
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
